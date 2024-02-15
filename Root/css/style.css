@@ -85,15 +85,3 @@ body {
 #password-icon{
     padding-left: 30px;
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin-top: auto; /* This ensures the footer sticks to the bottom */
-}
-
-footer .footer-logo a {
-    text-decoration: none;
-}
