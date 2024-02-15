@@ -1,8 +1,9 @@
 <footer>
-    <div class="footer-logo">
-        <p><a href="index.php">CHED Inventory System</a></p>
-    </div>
     <div class="footer-copyright">
-        <p>&nbsp;Copyright &copy; 2024</p>
+        <p>Copyright &copy; 2024</p>
+    </div>    
+    <div class="footer-logo">
+        <p><a href="index.php">&nbsp;CHED Inventory System</a></p>
     </div>
+    <p>&nbsp;All rights reserved.</p>
 </footer>

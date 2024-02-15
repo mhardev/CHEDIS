@@ -4,7 +4,7 @@
     </div>
     <div class="box-login">
         <h1>CHED Inventory System</h1>
-        <form method="POST">
+        <form method="POST" action="">
             <div class="input-container">
                 <i class="material-icons-sharp">person</i>
                 <input type="text" name="username" placeholder="Username">
