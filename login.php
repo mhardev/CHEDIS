@@ -1,8 +1,22 @@
-<div class="login-container">
-    <form action="" method="post">
-        <label for="name">Username:</label>
-        <input type="text" name="username" id="username" placeholder="Enter username"/><br/>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="Enter password"/><br/>
-    </form>
+<div class="box-container">
+    <div class="box-image">
+        <img src="Root/images/CHED-LOGO.png" alt="">
+    </div>
+    <div class="box-login">
+        <h1>CHED Inventory System</h1>
+        <form method="POST">
+            <div class="input-container">
+                <i class="material-icons-sharp">person</i>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="input-container">
+                <i class="material-icons-sharp">lock</i>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <span class="toggle-password" onclick="togglePasswordVisibility()" >
+                <i class="material-icons-sharp" id="password-icon">visibility</i>
+                </span>
+            </div>
+            <input type="submit" name="login-submit" value="Login" class="submit-button">
+        </form>
+    </div>
 </div>

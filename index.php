@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHED Inventory System</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="Root/css/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
 </head>
 <body>
@@ -13,8 +13,10 @@
         include('./login.php');
     ?>
 </body>
+<!-- JS Libraries -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</html>
 <?php
     include('./Footer.php');
 ?>
-</html>
