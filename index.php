@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHED Inventory System</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="Root/css/style.css">
+    <link rel="stylesheet" href="Root/css/login.css">
     <link rel="stylesheet" href="Root/css/footer.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
 </head>

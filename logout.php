@@ -12,8 +12,6 @@
                 logout(); // Call logout function if confirmed
             }
         });
-
-        return false; // Prevent default button behavior
     }
 
     function logout() {
@@ -23,7 +21,7 @@
             text: 'Logout Successfully',
             icon: 'success'
         }).then(function() {
-            window.location = 'logoutValidate.php'; // Redirect to logout script
+            window.location.href = 'Validations/logoutValidate.php'; // Redirect to logout script
         });
     }
 </script>
