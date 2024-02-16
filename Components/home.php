@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHED Inventory System</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="../Root/css/style.css">
+    <link rel="stylesheet" href="../Root/css/sidebar.css">
     <link rel="stylesheet" href="../Root/css/footer.css">
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
     </head>
 <body>
-    <?php
-        include('./Components/header.php');
-        include('./Components/sidebar.php');
-        include('./Components/body.php');
-    ?>
+    <div class="grid-container">
+        <?php
+            include('../dbconn/dbconn.php');
+            include('./header.php');
+            include('./sidebar.php');
+        ?>
+        <div class="main-container">
+            <?php
+                include('./body.php');
+            ?>
+        </div>
+    </div>
     <p><a href="#" id="logoutLink">logout</a></p>
 </body>
 <?php
