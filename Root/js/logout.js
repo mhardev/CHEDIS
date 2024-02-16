@@ -1,6 +1,5 @@
 document.getElementById('logoutLink').addEventListener('click', function(event) {
     event.preventDefault(); // Prevent the default behavior of the link
-
     confirmLogout();
 });
 
@@ -11,17 +10,20 @@ function confirmLogout() {
         icon: 'question',
         showCancelButton: true,
         confirmButtonText: 'Yes, logout',
+        confirmButtonColor: '#3377ff',
         cancelButtonText: 'Cancel'
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
                 title: 'Success',
                 text: 'Logout Successfully',
-                icon: 'success'
+                timer: 2000,
+                icon: 'success',
+                showConfirmButton: false
             }).then(function() {
-                // Redirect to logoutValidate.php on the server side
-                window.location = '/Validations/logoutValidate.php';
-            }); // Call logout function if confirmed
+                // Use a relative path for the redirect
+                window.location = '../Validations/logoutValidate.php';
+            });
         }
     });
 }
