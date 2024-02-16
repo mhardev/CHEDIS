@@ -17,7 +17,7 @@
     <?php
         include('./Components/body.php');
     ?>
-    <p><a href="../Validations/logoutValidate.php">logout</a></p>
+    <p><a href="#" id="logoutLink">logout</a></p>
 </body>
 <?php
     include('../footer.php');
