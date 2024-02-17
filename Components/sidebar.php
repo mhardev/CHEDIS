@@ -1,62 +1,67 @@
 <aside id="sidebar">
   <div class="sidebar-title">
     <div class="sidebar-brand">
-      <img src="../Root/images/CHED-LOGO.png" class="sidebarLogo">
+      <img src="../Root/images/CHED-LOGO.png" class="sidebarLogo" onclick="closeSidebar()">
     </div>
-    <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
   </div>
 
-  <ul class="sidebar-list">
-    <li class="sidebar-list-item">
-      <a href="Dashboard.php" target="">
-        <span class="material-icons-outlined">dashboard</span> Dashboard
-      </a>
-    </li>
-    <li class="sidebar-list-item dropdown">
-        <a href="#" class="dropdown-toggle" id="accountsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="material-icons-outlined">admin_panel_settings</span> Accounts
+  <div class="sidebar-item">
+    <ul class="sidebar-list">
+      <li class="sidebar-list-item">
+        <a href="home.php" target="">
+          <span class="material-icons-outlined">dashboard</span> Dashboard
         </a>
-        <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
-            <li><a class="dropdown-item" href="AdminAccounts.php">Admin Accounts</a></li>
-            <li><a class="dropdown-item" href="Users.php">User Accounts</a></li>
-        </ul>
-    </li>
-    <li class="sidebar-list-item">
-      <a href="Product.php" target="">
-        <span class="material-icons-outlined">inventory</span> Products
-      </a>
-    </li>
-    <li class="sidebar-list-item dropdown">
-        <a href="#" class="dropdown-toggle" id="accountsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="material-symbols-outlined">deployed_code_account</span> Supplier
+      </li>
+      <li class="sidebar-list-item dropdown">
+          <a href="#" class="dropdown-toggle" id="accountsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="material-icons-outlined">admin_panel_settings</span> Accounts
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
+              <li><a class="dropdown-item" href="#">Admin Accounts</a></li>
+              <li><a class="dropdown-item" href="#">User Accounts</a></li>
+          </ul>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="#" target="">
+          <span class="material-icons-outlined">inventory</span> Products
         </a>
-        <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
-            <li><a class="dropdown-item" href="Suppliers.php">Supplier Details</a></li>
-            <li><a class="dropdown-item" href="SupplierProducts.php">Supplier Products</a></li>
-        </ul>
-    </li>
-    <li class="sidebar-list-item">
-      <a href="AuditTrail.php" target="">
-        <span class="material-icons-outlined">content_paste_search</span> Audit Trail
-      </a>
-    </li>
-    <li class="sidebar-list-item dropdown">
-        <a href="#" class="dropdown-toggle" id="accountsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="material-icons-outlined">archive</span> Archive
+      </li>
+      <li class="sidebar-list-item dropdown">
+          <a href="#" class="dropdown-toggle" id="accountsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="material-symbols-outlined">deployed_code_account</span> Supplier
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
+              <li><a class="dropdown-item" href="#">Supplier Details</a></li>
+              <li><a class="dropdown-item" href="#">Supplier Products</a></li>
+          </ul>
+      </li>
+      <li class="sidebar-list-item">
+        <a href="#" target="">
+          <span class="material-icons-outlined">content_paste_search</span> Audit Trail
         </a>
-        <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
-            <li><a class="dropdown-item" href="AdminArchive.php">Archive Admins </a></li>
-            <li><a class="dropdown-item" href="UsersArchive.php">Archive Users </a></li>
-            <li><a class="dropdown-item" href="ProductArchive.php">Archive Products</a></li>
-            <li><a class="dropdown-item" href="ServicesArchive.php">Archive Services</a></li>
-            <li><a class="dropdown-item" href="SuppliersArchive.php">Archive Suppliers</a></li>
-            <li><a class="dropdown-item" href="SupplierProductsArchive.php">Archive Supplier Products</a></li>
-        </ul>
-    </li>
-    <li class="sidebar-list-item">
-      <a href="#" target="">
+      </li>
+      <li class="sidebar-list-item dropdown">
+          <a href="#" class="dropdown-toggle" id="accountsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="material-icons-outlined">archive</span> Archive
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="accountsDropdown">
+              <li><a class="dropdown-item" href="#">Archive Admins </a></li>
+              <li><a class="dropdown-item" href="#">Archive Users </a></li>
+              <li><a class="dropdown-item" href="#">Archive Products</a></li>
+              <li><a class="dropdown-item" href="#">Archive Services</a></li>
+              <li><a class="dropdown-item" href="#">Archive Suppliers</a></li>
+              <li><a class="dropdown-item" href="#">Archive Supplier Products</a></li>
+          </ul>
+      </li>
+    </ul>
+  </div>
+  <hr style="margin: 0;">
+  <div class="sidebar-signout">
+    <!-- Use a form for logout with an ID -->
+    <form id="logoutForm" action="../Validations/logoutValidate.php" method="post">
+      <a onclick="confirmLogout();">
         <span class="material-icons-outlined">logout</span> Sign-Out
       </a>
-    </li>
-  </ul>
+    </form>
+  </div>
 </aside>

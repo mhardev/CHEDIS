@@ -40,7 +40,7 @@
                 Swal.fire({
                     icon: "error",
                     text: "Username or Password is incorrect.",
-                    timer:1000,
+                    timer: 2000,
                     showConfirmButton: false
                 })
             </script>';

@@ -5,18 +5,18 @@ document.getElementById('logoutLink').addEventListener('click', function(event) 
 
 function confirmLogout() {
     Swal.fire({
-        title: 'Logout',
-        text: 'Are you sure you want to logout from this website?',
+        title: 'Sign-Out',
+        text: 'Are you sure you want to sign-out from this website?',
         icon: 'question',
         showCancelButton: true,
-        confirmButtonText: 'Yes, logout',
+        confirmButtonText: 'Yes, sign-out',
         confirmButtonColor: '#3377ff',
         cancelButtonText: 'Cancel'
     }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire({
                 title: 'Success',
-                text: 'Logout Successfully',
+                text: 'Sign-Out Successfully',
                 timer: 2000,
                 icon: 'success',
                 showConfirmButton: false

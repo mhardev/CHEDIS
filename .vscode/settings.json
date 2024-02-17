@@ -3,6 +3,7 @@
         "CHED",
         "chedis",
         "dbconn",
+        "signout",
         "Swal",
         "sweetalert"
     ]
