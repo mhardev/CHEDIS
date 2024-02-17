@@ -30,6 +30,12 @@ aside hr {
   font-family: 'Poppins', sans-serif;
 }
 
+.sidebar-logo a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  color: #ffffff76; /* Set the text color on hover */
+}
+
 .sidebar-logo span {
   font-size: 30px;
 }
