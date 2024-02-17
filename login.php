@@ -3,7 +3,7 @@
         <img src="Root/images/CHED-LOGO.png" alt="">
     </div>
     <div class="box-login">
-        <h1>CHED Inventory System</h1>
+        <h1 style="font-size: 32px;">CHED-NCR Inventory System</h1>
         <form method="POST" action="">
             <div class="input-container">
                 <i class="material-icons-sharp">person</i>
