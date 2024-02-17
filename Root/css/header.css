@@ -90,11 +90,7 @@
     border-radius: 50%;
   }
   
-  
-  
-    
-  
-    @media screen and (max-width: 992px) {
+  @media screen and (max-width: 992px) {
   
       .header {
         display: flex;

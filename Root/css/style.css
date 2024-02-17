@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #666666;
+  font-family: 'Poppins', sans-serif;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+p, span {
+  font-family: 'Poppins', sans-serif;
+}
 
 .material-icons-outlined {
   vertical-align: middle;
@@ -43,7 +54,7 @@ body {
 .grid-container {
   background:var(--body-color);
   display: grid;
-  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-template-columns: 264px 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
     "sidebar header header header"

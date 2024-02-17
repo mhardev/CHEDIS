@@ -18,6 +18,7 @@
     <!-- JavaScript Libraries-->
     <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="grid-container">

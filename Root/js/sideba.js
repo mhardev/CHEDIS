@@ -1,10 +1,4 @@
-const sidebarToggle = document.querySelector("#sidebar-toggle");
 
-if (sidebarToggle) {
-    sidebarToggle.addEventListener("click", function () {
-        document.querySelector("#sidebar").classList.toggle("collapsed");
-    });
-}
 
 let sidebarOpen = false;
 const sidebar = document.getElementById('sidebar');

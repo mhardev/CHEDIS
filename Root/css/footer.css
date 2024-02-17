@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 footer {
     display: flex;
     justify-content: center;
@@ -7,12 +8,13 @@ footer {
     margin-top: auto; /* This ensures the footer sticks to the bottom */
 }
 
-footer .footer-logo a {
+
+footer .footer-copyright a {
     text-decoration: none;
 }
 
 @media only screen and (max-width: 550px) {
     footer{
-        font-size: 12px;
+        font-size: 12px;    
     }
 }

@@ -1,80 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 #sidebar {
   grid-area: sidebar;
   height: 100%;
-  background-color: var(--sidebar-color);
-  color: #9799ab;
-  overflow-y: auto;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  background: var(--bs-dark);
+  transition: all 0.35s ease-in-out;
   display: flex;
   flex-direction: column;
 }
 
-.sidebar-title {
-  display: flex;
-  align-items: center;
-  padding: 0px 25px 0px 25px;
-  margin-bottom: 20px;
+aside hr {
+  color: #e9ecef;
 }
 
-.sidebar-brand {
-  margin-top: 15px;
-  font-size: 20px;
-  font-weight: 700;
+/* Sidebar Elements Style */
+
+.sidebar-logo {
+    padding: .8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.sidebar-item {
+.sidebar-logo a {
+  color: #e9ecef;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-logo span {
+  font-size: 30px;
+}
+
+.sidebar-logo img {
+  width: 72.61px;
+}
+
+.sidebar-items {
   display: flex;
-  height: 70%;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.sidebar-list {
-  padding: 0;
-  margin-top: 15px;
-  list-style-type: none;
-   /* Set a maximum height for the scroll bar to appear */
-  overflow-y: auto; /* Enable vertical scroll bar */
+.sidebar-item span, .sidebar-signout span {
+  padding-right: 10px;
 }
 
-.sidebar-list-item {
-  padding: 15px 20px 15px 20px;
+.sidebar-dropdown{
+  margin-left: 5.8vmin;
 }
 
-.sidebar-list-item:hover {
+.sidebar-nav {
+  flex-grow: 1;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-left: 0;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  color: #e9ecef;
+  font-size: .95rem;
+  padding: .375rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+  padding: .625rem 1.625rem;
+  color: #e9ecef;
+  position: relative;
+  display: block;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+a.sidebar-link:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  color: #ffffff76; /* Set the text color on hover */
 }
 
-.sidebar-list-item > a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.sidebar-list-item > a:hover {
-  text-decoration: none;
-  color: #ffffff76;
-}
-
-.sidebar-responsive {
-  display: inline !important;
+.sidebar-link[data-bs-toggle="collapse"]::after {
+  border: solid;
+  border-width: 0 .075rem .075rem 0;
+  content: "";
+  display: inline-block;
+  padding: 2px;
   position: absolute;
-  /*
-    the z-index of the ApexCharts is 11
-    we want the z-index of the sidebar higher so that
-    the charts are not showing over the sidebar
-    on small screens
-  */
-  z-index: 12 !important;
+  right: 1.5rem;
+  top: 1.4rem;
+  transform: rotate(-135deg);
+  transition: all .2s ease-out;
 }
-.sidebarLogo {
-  height: 150px;
-  width: 150px;
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+  transform: rotate(45deg);
+  transition: all .2s ease-out;
 }
+
+.sidebar-theme {
+  padding: .625rem 1.625rem;
+  color: #e9ecef;
+  position: relative;
+  display: block;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-theme:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  color: #ffffff76; /* Set the text color on hover */
+}
+
 .sidebar-signout {
-  padding: 15px 20px 15px 20px;
-  color: #ffffff; /* Set the text color to white */
+  padding: .625rem 1.625rem;
+  color: #e9ecef;
+  position: relative;
+  display: block;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .sidebar-signout:hover {
@@ -83,85 +137,134 @@
   color: #ffffff76; /* Set the text color on hover */
 }
 
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  width: 264px;
+  /*
+      the z-index of the ApexCharts is 11
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar
+      on small screens
+  */
+  z-index: 12 !important;
+}
+
+/* Sidebar Toggle */
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+
 @media only screen and (max-height: 1180px) {
-  .sidebar-item {
+  .sidebar-items {
     height: 50%;
   }
 }
 
 @media only screen and (max-height: 980px) {
-  .sidebar-list {
+  .sidebar-nav {
     padding: 0;
-    margin-top: 15px;
     list-style-type: none;
     max-height: 700px; /* Set a maximum height for the scroll bar to appear */
     overflow-y: auto; /* Enable vertical scroll bar */
   }
-  .sidebar-item {
+  .sidebar-items {
     height: 73%;
   }
+  .sidebar-dropdown{
+    margin-left: 4.8vmin;
+  }
 }
-
+  
 @media only screen and (max-height: 900px) {
-  .sidebar-list {
+  .sidebar-nav {
     padding: 0;
-    margin-top: 15px;
     list-style-type: none;
     max-height: 600px; /* Set a maximum height for the scroll bar to appear */
     overflow-y: auto; /* Enable vertical scroll bar */
   }
-  .sidebar-item {
-    height: 71%;
+  .sidebar-items {
+    height: 83%;
+  }
+  .sidebar-dropdown{
+    margin-left: 5vmin;
   }
 }
 
-@media only screen and (max-height: 750px) {
-  .sidebar-list {
-    padding: 0;
-    margin-top: 15px;
-    list-style-type: none;
-    max-height: 450px; /* Set a maximum height for the scroll bar to appear */
-    overflow-y: auto; /* Enable vertical scroll bar */
-  }
-  .sidebar-item {
-    height: 67%;
+@media only screen and (max-height: 800px) {
+  .sidebar-dropdown{
+    margin-left: 4.8vmin;
   }
 }
-
-@media only screen and (max-height: 680px) {
-  .sidebar-list {
-    padding: 0;
-    margin-top: 15px;
-    list-style-type: none;
-    max-height: 400px; /* Set a maximum height for the scroll bar to appear */
-    overflow-y: auto; /* Enable vertical scroll bar */
-  }
-  .sidebar-item {
-    height: 64%;
-  }
-}
-
-@media only screen and (max-height: 650px) {
-  .sidebar-item {
-    height: 61%;
-  }
-}
-@media only screen and (max-height: 600px) {
   
-  .sidebar-item {
-    height: 60%;
+@media only screen and (max-height: 750px) {
+  .sidebar-nav {
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+    max-height: 530px; /* Set a maximum height for the scroll bar to appear */
+    overflow-y: auto; /* Enable vertical scroll bar */
+  }
+  .sidebar-items {
+    height: 79%;
+  }
+}
+  
+@media only screen and (max-height: 680px) {
+  .sidebar-nav {
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+    max-height: 480px; /* Set a maximum height for the scroll bar to appear */
+    overflow-y: auto; /* Enable vertical scroll bar */
+  }
+  .sidebar-items {
+    height: 79%;
+  }
+  .sidebar-dropdown{
+    margin-left: 5.5vmin;
+  }
+}
+  
+@media only screen and (max-height: 650px) {
+  .sidebar-nav {
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+    max-height: 480px; /* Set a maximum height for the scroll bar to appear */
+    overflow-y: auto; /* Enable vertical scroll bar */
+  }
+  .sidebar-items {
+    height: 79%;
+  }
+  .sidebar-dropdown{
+    margin-left: 5.9vmin;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .sidebar-items {
+    height: 75%;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .sidebar-items {
+    height: 74%;
   }
 }
 
 @media only screen and (max-height: 500px) {
-  .sidebar-list {
+  .sidebar-nav {
     padding: 0;
     list-style-type: none;
     max-height: 230px; /* Set a maximum height for the scroll bar to appear */
     overflow-y: auto; /* Enable vertical scroll bar */
   }
-  .sidebar-item {
+  .sidebar-items {
     height: auto;
   }
 }
-
