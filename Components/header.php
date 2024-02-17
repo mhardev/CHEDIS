@@ -4,9 +4,12 @@
     </div>
     <div class="header-right">
         <div class="dropdown">
-            <span></span>
+            <?php 
+            include("./API/Header/getAccountDetails.php");
+            ?>
+            <span>Hi, </span>
             <button type="button" class="btn btn-light rounded-5" id="profile" data-bs-toggle="dropdown" aria-expanded="false">
-            Admin
+                <?php echo $super_admin_username;?>
             </button>
             <ul class="dropdown-menu" aria-labelledby="profile">
                 <li><a class="dropdown-item" id="updtInfo" data-bs-toggle="modal" data-bs-backdrop="static" data-bs-target="#updateInfo"> Update Info</a></li>

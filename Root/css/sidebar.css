@@ -73,25 +73,16 @@
   height: 150px;
   width: 150px;
 }
-
 .sidebar-signout {
   padding: 15px 20px 15px 20px;
   font-size: 14px;
+  color: #ffffff; /* Set the text color to white */
 }
 
 .sidebar-signout:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
-}
-
-.sidebar-signout > a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.sidebar-signout > a:hover {
-  text-decoration: none;
-  color: #ffffff76;
+  color: #ffffff76; /* Set the text color on hover */
 }
 
 @media only screen and (max-height: 1180px) {
