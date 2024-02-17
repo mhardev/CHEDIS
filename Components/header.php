@@ -5,7 +5,7 @@
     <div class="header-right">
         <div class="dropdown">
             <?php 
-            include("./API/Header/getAccountDetails.php");
+            include("./APIs/Header/getAccountDetails.php");
             ?>
             <span>Hi, </span>
             <button type="button" class="btn btn-light rounded-5" id="profile" data-bs-toggle="dropdown" aria-expanded="false">

@@ -2,7 +2,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     overflow-y: auto;
     grid-area: footer;
     margin-top: auto; /* This ensures the footer sticks to the bottom */

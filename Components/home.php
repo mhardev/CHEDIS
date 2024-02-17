@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHED Inventory System</title>
-    <!-- CSS only -->
+    <!-- Icon Libraries -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <!-- Custom CSS -->
@@ -34,7 +34,7 @@
             ?>
         </div>
         <?php
-            include('../Footer.php');
+            include('../footer.php');
         ?>
     </div>
 </body>

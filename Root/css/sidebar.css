@@ -40,7 +40,6 @@
 
 .sidebar-list-item {
   padding: 15px 20px 15px 20px;
-  font-size: 14px;
 }
 
 .sidebar-list-item:hover {
@@ -75,7 +74,6 @@
 }
 .sidebar-signout {
   padding: 15px 20px 15px 20px;
-  font-size: 14px;
   color: #ffffff; /* Set the text color to white */
 }
 
