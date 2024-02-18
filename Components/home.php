@@ -31,7 +31,7 @@
         ?>
         <div class="main-container">
             <?php
-                include('../Components/Modules/Accounts/accounts.php');
+                include('../Components/Modules/Accounts/admin_accounts.php');
             ?>
         </div>
         <?php
