@@ -31,10 +31,11 @@
         ?>
         <div class="main-container">
             <?php
-                include('./body.php');
+                include('../Components/Modules/Accounts/accounts.php');
             ?>
         </div>
         <?php
+            include("./Sections/Modals/Header/headerModal.php");
             include('../footer.php');
         ?>
     </div>

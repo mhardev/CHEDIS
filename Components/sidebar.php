@@ -4,14 +4,14 @@
         <img src="../Root/images/192x192.png" class="sidebarLogo">
         <a href="#" onclick="closeSidebar()"><span>CHED-NCR</span><br>Inventory System</a>
     </div>
-    <hr style="margin-top:0;">
+    <hr style="margin:0;">
     <div class="sidebar-items">
         <ul class="sidebar-nav">
             <li class="sidebar-header">
                 Modules
             </li>
             <li class="sidebar-item">
-                <a href="home.php" class="sidebar-link">
+                <a href="/Components/Modules/Dashboard/dashboard.php" class="sidebar-link">
                     <span class="material-icons-outlined">dashboard</span> Dashboard
                 </a>
             </li>
@@ -21,7 +21,7 @@
                 </a>
                 <ul id="account" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Admin Account</a>
+                        <a href="./Modules/Accounts/accounts.php" class="sidebar-link">Admin Account</a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">User Account</a>
