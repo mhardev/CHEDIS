@@ -33,6 +33,7 @@
         <div class="main-container">
             <?php
                 include('../Components/Tables/Accounts/user_accounts.php');
+                include('../Components/APIs/Accounts/getUserAccounts.php');
             ?>
         </div>
         <?php
