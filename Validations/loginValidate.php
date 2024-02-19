@@ -29,7 +29,7 @@
                     timer: 2000,
                     showConfirmButton: false
                 }).then(() => {
-                    window.location.href = "Components/home.php";
+                    window.location.href = "Components/Dashboard.php";
                 })
             </script>';
         exit;

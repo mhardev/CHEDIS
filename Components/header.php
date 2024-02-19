@@ -20,4 +20,7 @@
             </ul>
         </div>
     </div>
+    <?php
+        include('./Sections/Modals/Header/headerModal.php');
+    ?>
 </header>

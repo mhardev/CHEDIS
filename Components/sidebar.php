@@ -11,7 +11,7 @@
                 Modules
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="./Dashboard.php" class="sidebar-link">
                     <span class="material-icons-outlined">dashboard</span> Dashboard
                 </a>
             </li>
@@ -21,10 +21,10 @@
                 </a>
                 <ul id="account" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Admin Account</a>
+                        <a href="./AdminAccounts.php" class="sidebar-link">Admin Account</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">User Account</a>
+                        <a href="./UserAccounts.php" class="sidebar-link">User Account</a>
                     </li>
                 </ul>
             </li>
