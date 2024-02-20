@@ -15,7 +15,10 @@ aside hr {
 /* Sidebar Elements Style */
 
 .sidebar-logo {
-    padding: .8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: .6rem;
+    padding-top: .6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,7 +26,7 @@ aside hr {
 
 .sidebar-logo a {
   color: #e9ecef;
-  font-size: 1.15rem;
+  font-size: .8rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -36,11 +39,11 @@ aside hr {
 }
 
 .sidebar-logo span {
-  font-size: 30px;
+  font-size: 1.25rem;
 }
 
 .sidebar-logo img {
-  width: 72.61px;
+  width: 50px;
 }
 
 .sidebar-items {

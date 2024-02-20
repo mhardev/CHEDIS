@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../Root/css/sidebar.css">
     <link rel="stylesheet" href="../Root/css/footer.css">
     <link rel="stylesheet" href="../Root/css/main.css">
+    <link rel="stylesheet" href="../Root/css/tables.css">
     <!-- CSS Libraries-->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"></link>
@@ -33,7 +34,6 @@
         <div class="main-container">
             <?php
                 include('../Components/Tables/Accounts/admin_accounts.php');
-                include('../Components/APIs/Accounts/getAdminAccounts.php');
             ?>
         </div>
         <?php

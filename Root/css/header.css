@@ -1,11 +1,13 @@
 .material-icons-outlined {
     vertical-align: middle;
     line-height: 1px;
+    cursor: pointer;
   }
   
   .material-symbols-outlined {
     vertical-align: middle;
     line-height: 1px;
+    cursor: pointer;
   }
   
   .header {

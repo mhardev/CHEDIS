@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../Root/css/sidebar.css">
     <link rel="stylesheet" href="../Root/css/footer.css">
     <link rel="stylesheet" href="../Root/css/main.css">
+    <link rel="stylesheet" href="../Root/css/tables.css">
     <!-- CSS Libraries-->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"></link>
@@ -33,7 +34,6 @@
         <div class="main-container">
             <?php
                 include('../Components/Tables/Accounts/user_accounts.php');
-                include('../Components/APIs/Accounts/getUserAccounts.php');
             ?>
         </div>
         <?php
@@ -48,6 +48,8 @@
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
 <script src="../node_modules/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 <!-- Custom JavaScript -->
 <script src="../Root/js/logout.js"></script>
 <script src="../Root/js/sidebar.js"></script>

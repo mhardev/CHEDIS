@@ -5,7 +5,7 @@
     <span class="mx-1"><i class="bi bi-plus-circle"></i></span>User Account
 </button>
 <div class="table-responsive">
-    <table id="adminAccTbl" class="table table-striped table-sm" style="width:100%">
+    <table class="table table-striped table-sm" style="width:100%">
         <thead>
             <tr class="table-dark">
                 <th>ID</th>
@@ -15,7 +15,15 @@
                 <th>Role</th>
                 <th>Designation</th>
                 <th>Actions</th>
+                <style>   
+                th{
+                    text-align: center;
+                }
+                </style>
             </tr>
+            <?php
+                include('../Components/APIs/Accounts/getUserAccounts.php');
+            ?>
         </thead>
         <tbody class=table-group-divider>
         </tbody>
