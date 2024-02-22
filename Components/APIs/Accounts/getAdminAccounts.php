@@ -1,5 +1,4 @@
 <?php 
-
     $sql = "SELECT * FROM tbl_admin";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result) > 0){
@@ -12,8 +11,9 @@
                     <td>" . $row['admin_role'] . "</td>
                     <td>" . $row['admin_designation'] . "</td>
                     <td>
-                        <button class='btn btn-primary' onclick='openUpdateModal(" . $row['admin_id'] . ", \"" . $row['admin_first_name'] . "\")'>Update</button>
-                        <button class='btn btn-danger' onclick='deleteAccount(" . $row['admin_id'] . ")'>Delete</button>
+                        <button class='btn btn-primary' onclick='openUpdateModal(" . $row['admin_id'] . ", \"" . $row['admin_first_name'] . "\")'>Update Info</button>
+                        <button class='btn btn-primary' onclick='openUpdatePassModal(" . $row['admin_id'] . ", \"" . $row['admin_password'] . "\")'>Update Password</button>
+                        <button class='btn btn-danger' onclick='deleteAccount(" . $row['admin_id'] . ")'>Archive</button>
                     </td>
                 </tr>";
         }

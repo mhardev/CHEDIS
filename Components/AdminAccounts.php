@@ -34,6 +34,7 @@
         <div class="main-container">
             <?php
                 include('../Components/Tables/Accounts/admin_accounts.php');
+                include('../Components/APIs/Accounts/deleteAdminAccounts.php');
             ?>
         </div>
         <?php
@@ -51,4 +52,5 @@
 <!-- Custom JavaScript -->
 <script src="../Root/js/logout.js"></script>
 <script src="../Root/js/sidebar.js"></script>
+<script src="../Root/js/Accounts/AdminAccounts.js"></script>
 </html>
